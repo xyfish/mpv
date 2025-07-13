@@ -662,6 +662,7 @@ endif
 libarchive = dependency('libarchive', version: '>= 3.4.0', required: get_option('libarchive'))
 features += {'libarchive': libarchive.found()}
 if features['libarchive']
+    add_project_arguments('-DLIBARCHIVE_STATIC', language : ['c', 'cpp'])
     dependencies += libarchive
     sources += files('demux/demux_libarchive.c',
                      'stream/stream_libarchive.c')

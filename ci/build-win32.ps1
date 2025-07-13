@@ -246,7 +246,7 @@ meson setup build `
     -Dwin32-smtc=enabled `
     -Dlua=luajit `
     -Ddrm=disabled `
-    -Dlibarchive=disabled `
+    -Dlibarchive=enabled `
     -Drubberband=disabled `
     -Dwayland=disabled `
     -Dx11=disabled
